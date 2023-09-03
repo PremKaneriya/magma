@@ -1,0 +1,410 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Jost', sans-serif;
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat Alternates', sans-serif;
+  font-family: 'Nunito Sans', sans-serif;
+  font-family: 'Quattrocento Sans', sans-serif;
+  font-family: 'Quicksand', sans-serif;
+  font-family: 'Red Hat Display', sans-serif;
+  color: white;
+}
+
+body,
+html {
+  height: 100%;
+  width: 100%;
+}
+
+#main {
+  position: relative;
+  overflow: hidden;
+  background-color: #0a3cce;
+}
+
+#page1 {
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+}
+
+#page1>video {
+  background-size: cover;
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+#nav {
+  height: 10vh;
+  width: 100vw;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 30px;
+}
+
+#nav>img {
+  width: 10%;
+  margin: -2.7vw 0 0 -8vh;
+}
+
+#right-nav>button {
+  padding: 8px 20px;
+  border-radius: 50px;
+  border: 1px solid #b8b2b2;
+  background-color: #0940df;
+  color: white;
+  font-size: 12px;
+}
+
+#botm-page-1 {
+  position: absolute;
+  bottom: 15%;
+  left: 15%;
+  height: 40vh;
+  width: 50vw;
+}
+
+#botm-page-1>h1 {
+  line-height: 1.2;
+  font-size: 60px;
+  font-weight: 100;
+}
+
+#botm-page-1-inner {
+  height: 30%;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 80px 0 0;
+}
+
+#botm-page-1-inner button {
+  padding: 10px 26px;
+  border-radius: 50px;
+  border: none;
+  color: blue;
+}
+
+#botm-page-1-inner h3 {
+  font-weight: 100;
+  line-height: 1.2;
+}
+
+#page2 {
+  height: 100vh;
+  width: 100vw;
+  background-color: #0a3cce;
+  position: relative;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0vw 8vw;
+}
+
+#page2>h2 {
+  font-weight: 100;
+  margin-bottom: 2vw;
+}
+
+#page2 h1 {
+  width: 90%;
+  font-size: 3.7vw;
+  line-height: 1.3;
+  font-weight: 100;
+}
+
+#page3 {
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  background-color: #0940df;
+}
+
+#page3>canvas {
+  min-height: 100vh;
+  min-width: 100vw;
+  position: relative;
+}
+
+#page4 {
+  height: 100vh;
+  width: 100vw;
+  background-color: #0a3cce;
+  position: relative;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0vw 8vw;
+}
+
+#page4 h3 {
+  font-weight: 100;
+  margin-bottom: 2vw;
+}
+
+#page4 h1 {
+  width: 90%;
+  font-size: 3.7vw;
+  line-height: 1.1;
+  font-weight: 200;
+}
+
+#page5>canvas {
+  min-height: 100vh;
+  min-width: 100vw;
+  position: relative;
+}
+
+#page5 {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+}
+
+#page6 {
+  height: 100vh;
+  width: 100vw;
+  background-color: #0a3cce;
+  position: relative;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0vw 8vw;
+}
+
+#page6 h3 {
+  font-weight: 100;
+  margin-bottom: 2vw;
+}
+
+#page6 h1 {
+  width: 90%;
+  font-size: 4vw;
+  line-height: 1.1;
+  font-weight: 200;
+}
+
+#page7 {
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+}
+
+#page7>canvas {
+  min-height: 100vh;
+  min-width: 100vw;
+  position: relative;
+}
+
+.page-7-cir {
+  height: 45vh;
+  width: 20vw;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  left: 50%;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 9;
+  border: 1px solid white;
+}
+
+.page-7-cir-inner {
+  height: 70%;
+  width: 70%;
+  border: 1px solid white;
+  background-color: transparent;
+  border-radius: 50%;
+}
+
+#page8 {
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+}
+
+#page8 video {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+#page8-botm {
+  position: absolute;
+  bottom: 8%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+
+
+#page8-botm h1 {
+  margin-bottom: 2vw;
+  font-size: 5vw;
+  font-weight: 100;
+}
+
+
+#page8-botm button {
+  padding: 12px 20px;
+  border-radius: 50px;
+  border: 1px solid #b8b2b2;
+  background-color: white;
+  color: blue;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+#page9 {
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  display: flex;
+  background-color: #0a3cce;
+}
+
+#left9 {
+  height: 100%;
+  width: 40%;
+  position: relative;
+}
+
+#right9 {
+  height: 100%;
+  width: 60%;
+  position: relative;
+}
+
+#left9 h1 {
+  position: absolute;
+  top: 30%;
+  right: 20%;
+  transform: translateY(-50%);
+  font-size: 5vw;
+  font-weight: 100;
+  line-height: 1.1;
+}
+
+.center9 {
+  height: 65%;
+  width: 85%;
+  border-radius: 10px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.center9 img {
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  object-fit: cover;
+}
+
+#page10 {
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+}
+
+.right10 {
+  height: 100%;
+  width: 60%;
+  position: absolute;
+  right: 0;
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  justify-content: start;
+}
+
+.rinner {
+  height: 33%;
+  width: 80%;
+  margin-top: 2vw;
+}
+
+.rinner h3 {
+  font-size: 2vw;
+}
+
+.rinner p {
+  font-size: 1.5vw;
+  margin-top: 2vw;
+}
+
+#page11 {
+  position: relative;
+  height: 120vh;
+  width: 100vw;
+  background-color: #fff;
+}
+
+#page11 h1 {
+  position: absolute;
+  font-size: 4vw;
+  color: #000;
+  font-weight: 900;
+  top: 3%;
+  left: 5%;
+}
+
+.in11 {
+  position: relative;
+  margin-bottom: 2vw;
+  height: 24%;
+  width: 100%;
+  top: 18%;
+  display: flex;
+
+}
+
+.lf11 {
+  position: relative;
+  height: 100%;
+  width: 40%;
+  left: 5%;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.lf11 img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  background-size: cover;
+}
+
+.ri11 {
+  position: absolute;
+  height: 100%;
+  left: 50%;
+  width: 48%;
+  padding-top: 8vh;
+}
+
+.ri11 h4 {
+  font-weight: 100;
+  color: #000;
+
+}
+
+.ri11 p {
+  font-weight: 100;
+  font-size: 1.5vw;
+  color: #000;
+
+}
